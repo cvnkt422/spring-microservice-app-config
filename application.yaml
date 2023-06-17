@@ -10,4 +10,17 @@ okta:
   oauth2:
     issuer: https://dev-25250861.okta.com/oauth2/default
     audience: api://default
+
+securityDefinitions:
+ google_id_token:
+  authorizationUrl: ""
+  flow: "implicit"
+  type: "oauth2"
+  x-google-issuer: "https://accounts.google.com"
+  x-google-jwks_uri: "https://www.googleapis.com/oauth2/v3/certs"
+  # Optional. Replace YOUR-CLIENT-ID with your client ID
+  x-google-audiences: "YOUR-CLIENT-ID"
+
+security:
+ - google_id_token: []
  
