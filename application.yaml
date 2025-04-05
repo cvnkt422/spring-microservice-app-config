@@ -8,7 +8,7 @@ eureka:
       
 okta:
   oauth2:
-    issuer: https://dev-25250861.okta.com/oauth2/default
+    issuer: https://dev-12872364.okta.com/oauth2/default
     audience: api://default
 
 app:
